@@ -3,14 +3,11 @@
 
 
 $(document).ready(function() {
- 
     $("#owl-demo").owlCarousel({
-   
         navigation : true, // Show next and prev buttons
         slideSpeed : 300,
         paginationSpeed : 400,
         singleItem:true,
-   
         // "singleItem:true" is a shortcut for:
         items : 1, 
         itemsDesktop : false,
@@ -28,7 +25,7 @@ $(document).ready(function() {
                 nav:true
             },
             
-            991:{
+            767:{
                 items:2,
                 nav:true,
                 loop:false
@@ -50,7 +47,7 @@ $(document).ready(function() {
                 nav:true
             },
             
-            991:{
+            767:{
                 items:2,
                 nav:true,
                 loop:false
@@ -61,9 +58,8 @@ $(document).ready(function() {
                 loop:false
             }
         }
-   
-     
       });
+
       $("#owl-example2").owlCarousel({
         autoPlay: 2000,
         responsive:{
@@ -72,7 +68,7 @@ $(document).ready(function() {
                 nav:true
             },
             
-            991:{
+            767:{
                 items:2,
                 nav:true,
                 loop:false
@@ -95,7 +91,7 @@ $(document).ready(function() {
                 nav:true
             },
             
-            991:{
+            767:{
                 items:2,
                 nav:true,
                 loop:false
@@ -109,6 +105,7 @@ $(document).ready(function() {
    
    
       });
+
       $("#owl-example3").owlCarousel({
         autoPlay: 2000,
         responsive:{
@@ -117,7 +114,7 @@ $(document).ready(function() {
                 nav:true
             },
             
-            991:{
+            767:{
                 items:2,
                 nav:true,
                 loop:false
@@ -129,16 +126,14 @@ $(document).ready(function() {
             }
         }
    
-   
       });
-
-     
     
   });
 
-  
-
-  
-  document.getElementById("mobile-trigger").addEventListener("click", function(){
+document.getElementById("mobile-trigger").addEventListener("click", function(){
      $(".custom-menu").slideToggle();
+     document.body.classList.toggle("menu-open");
   })
+
+
+
