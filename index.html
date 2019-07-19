@@ -2,41 +2,25 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Morphy Website</title>
     <!--  CSS -->
-        <link rel="stylesheet" href="css/owl.carousel.min.css">
-        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="css/owl.theme.default.min.css" />
         <link href="css/all.css" rel="stylesheet"> <!--load all styles -->
         <link rel="stylesheet" href="css/style.css" />
-    <style>
-    @font-face {
-        font-family: OpenSans-Regular;
-        src: url(fonts/OpenSans-Regular.ttf);
-    }
-    @font-face {
-        font-family: OpenSans-ExtraBold;
-        src: url(fonts/OpenSans-ExtraBold.ttf);
-    }
-    @font-face {
-        font-family: OpenSans-Light;
-        src: url(fonts/OpenSans-Light.ttf);
-    }
-    @font-face {
-        font-family: OpenSans-Bold;
-        src: url(fonts/OpenSans-Bold.ttf);
-    }
-    
-    </style>
   </head>
   <body>
 <div class="header-container">
     <header>
         <div class="container">
             <div class="logo">
-                <a href="#"><img src="images/logo.png" alt="Morphy Richards"></a>
-                 <div id="mobile-trigger"><i class="fas fa-bars"></i></div>
+                <a href="#"><img src="images/logo.png" alt="Morphy Richards" title="morphy richards"></a>
+                 <div id="mobile-trigger">
+                     <i class="fas fa-bars menu-open-icon"></i>
+                     <i class="fas fa-times menu-close-icon"></i>
+                </div>
             </div>
             <div class="custom-menu">
                     <ul>
@@ -53,10 +37,31 @@
     </header>
     <div id="headerslider">
         <div id="owl-demo" class="owl-carousel owl-theme">
-                <div class="slide-item"> <img src="images/bannerslide.png" alt="Slide1"> </div>
-                <div class="slide-item"> <img src="images/bannerslide.png" alt="Slide1"> </div>
-                <div class="slide-item"> <img src="images/bannerslide.png" alt="Slide1"> </div>
-                <div class="slide-item"> <img src="images/bannerslide.png" alt="Slide1"> </div>
+                <div class="slide-item"> 
+                    <div id="banner-content">
+                        <h3>The right <span class="power">power</span> always</h3>
+                        <p><button type="button">Explore</button></p>
+                    </div>
+                    <img src="images/banner.png" alt="Slide1">
+             </div>
+                <div class="slide-item">
+                        <div id="banner-content">
+                                <h3>The right <span class="power">power</span> always</h3>
+                                <p><button type="button">Explore</button></p>
+                            </div>
+                    <img src="images/banner.png" alt="Slide1"> </div>
+                <div class="slide-item">
+                        <div id="banner-content">
+                                <h3>The right <span class="power">power</span> always</h3>
+                                <p><button type="button">Explore</button></p>
+                            </div>
+                    <img src="images/banner.png" alt="Slide1"> </div>
+                <div class="slide-item"> 
+                    <div id="banner-content">
+                            <h3>The right <span class="power">power</span> always</h3>
+                            <p><button type="button">Explore</button></p>
+                    </div>
+                    <img src="images/banner.png" alt="Slide1"> </div>
         </div>
     </div>
 </div>
@@ -562,7 +567,7 @@
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <div class="footer-limks">
+                <div class="footer-links">
                     <ul>
                         <li><a href="#">Corporate</a></li>
                         <li><a href="#">Contact</a></li>
@@ -585,7 +590,8 @@
             </div>
         </div>
     </footer>
-    <!------ js files -->
+   
+    <!--js files -->
     <script src= "js/jquery-3.4.1.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script defer src="js/all.js"></script> <!--load all styles -->
